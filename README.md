@@ -10,6 +10,8 @@ This script was built with mostly default libraries. If using on a pivot host yo
 Targets can be passed as single IP with -t <IP>. A subnet via CIDR notation with -c <CIDR>, passed as a list of IPs in a text file with -f <file name>, or passed as a list of CIDR notation subnets in a file with -cf <file name>.
   
 Ports can be passed as a single port with -p <port>, nmap top 10/100/1000 ports with -tp 10, -tp 100, -tp 1000, or all TCP ports with -a.
+  
+pscan-1.py uses the ping sweep and port scan but removes the colorama and enumeration to be more portable to pviot machines.
 
 Usage:
   python3 pscan.py -t 192.168.1.1 -p 80
