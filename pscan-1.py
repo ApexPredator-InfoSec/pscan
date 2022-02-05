@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Title: pscan.py
+#Title: pscan-1.py
 #Author: ApexPredator
 #License: MIT
 #Github: https://github.com/ApexPredator-InfoSec/pscan
@@ -14,7 +14,7 @@ from ftplib import FTP
 from smtplib import SMTP
 from ipaddress import ip_network
 
-parser = argparse.ArgumentParser(prog='pscan.py', usage='python3 -t <target> -p <port to scan>\npython3 pscan.py -t 8.8.8.8 -p 80\npython3 pscan.py -c 192.168.1.0/24 -a') #build argument list
+parser = argparse.ArgumentParser(prog='pscan-1.py', usage='python3 -t <target> -p <port to scan>\npython3 pscan-1.py -t 8.8.8.8 -p 80\npython3 pscan-1.py -c 192.168.1.0/24 -a') #build argument list
 parser.add_argument('-t', '--target', help='Target IP', required=False)
 parser.add_argument('-f', '--file', help='File Containing Target URLs', required=False)
 parser.add_argument('-c', '--cidr', help='Target IP block in CIDR notation', required=False)
